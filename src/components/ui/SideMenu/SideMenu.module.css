@@ -54,7 +54,6 @@
 }
 
 .menuLink {
-  display: block;
   padding: 0.75rem 1rem;
   text-decoration: none;
   color: #333;
@@ -116,7 +115,7 @@
   background: white;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.15);
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
   z-index: 100;
   margin-bottom: 0.5rem;
 }
@@ -164,122 +163,4 @@
 
 .menuContainer.collapsed {
   width: 60px;
-}
-
-.menuHeader {
-  padding: 0.625rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.expandCollapseButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 0.3125rem;
-  width: 100%;
-  text-align: left;
-}
-
-.menuList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex: 1;
-  overflow-y: auto;
-}
-
-.menuLink {
-  display: block;
-  padding: 0.75rem 1rem;
-  text-decoration: none;
-  color: #333;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-align: left;
-}
-
-.menuLink:hover {
-  background-color: #e0e0e0;
-}
-
-.menuFooter {
-  padding: 0.625rem;
-  border-top: 1px solid #ddd;
-  background-color: #fafafa;
-  position: sticky;
-  bottom: 0;
-}
-
-.userMenu {
-  margin-bottom: 0.5rem;
-  position: relative;
-}
-
-.userMenuButton {
-  width: 100%;
-  padding: 0.5rem 0.75rem;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.5rem;
-}
-
-.userMenuButton:hover {
-  background: #0056b3;
-}
-
-.userMenuPopover {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.15);
-  z-index: 100;
-  margin-bottom: 0.5rem;
-}
-
-.popoverItem {
-  display: block;
-  width: 100%;
-  padding: 0.5rem 0.75rem;
-  background: none;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  border-bottom: 1px solid #eee;
-}
-
-.popoverItem:hover {
-  background-color: #f0f0f0;
-}
-
-.popoverItem:last-child {
-  border-bottom: none;
-}
-
-.logoutButton {
-  width: 100%;
-  padding: 0.5rem 0.75rem;
-  background: #dc3545;
-  color: white;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  text-align: left;
-}
-
-.logoutButton:hover {
-  background: #a71a24;
 }

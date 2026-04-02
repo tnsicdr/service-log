@@ -1,13 +1,14 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 100%;
 }
 
 .menuWrapper {
   width: 250px;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
+  position: relative;
 }
 
 .contentWrapper {

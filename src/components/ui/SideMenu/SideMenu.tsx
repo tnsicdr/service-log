@@ -2,6 +2,7 @@ import type { MenuItem } from "./SideMenu.types";
 import styles from "./SideMenu.module.css";
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
+import { PlaceholderIcon } from "@phosphor-icons/react";
 
 interface SideMenuProps {
   menuItems?: MenuItem[];
@@ -37,6 +38,7 @@ export function SideMenu({ menuItems }: Readonly<SideMenuProps>) {
         {menuItems?.map((item) => (
           <li key={item.label}>
             <Link to={item.path} className={styles.menuLink}>
+              {item.icon ? <item.icon /> : <PlaceholderIcon />}
               <span className={styles.menuItemText}>{item.label}</span>
             </Link>
           </li>
